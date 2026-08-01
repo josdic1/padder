@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Padder
 
-Currently, two official plugins are available:
+### Write now. Find it later.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A scratch pad that finds related saved notes while you type.
 
-## Expanding the ESLint configuration
+</div>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<p align="center">
+  <img src="assets/padder-main.png" alt="Padder writing surface with Match Sticks showing a related saved note" width="100%" />
+</p>
 
-- Configure the top-level `parserOptions` property like this:
+## Overview
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Padder keeps quick writing simple. Write on one clean page, tear it away when it is finished, and Match Sticks surfaces related saved notes as you type. That prevents duplicate entries, reduces clutter, and turns the pad into a natural search surface.
+
+## Features
+
+- Write without choosing a folder, title, or form
+- See related saved notes while typing
+- Tear a page to file it locally
+- Pin the window when it needs to stay visible
+- Open or download any matching note
+
+## How it works
+
+1. Start typing on the pad.
+2. Review any related notes shown in Match Sticks.
+3. Tear the page when the note is complete.
+
+<p align="center">
+  <img src="assets/padder-match-sticks.png" alt="Padder Match Sticks panel showing a related saved note" width="100%" />
+</p>
+
+## Built with
+
+Electron · React · TypeScript · Vite · electron-store
+
+## Run locally
+
+```bash
+npm install
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Privacy
+
+No account. Notes are stored locally on the Mac.
